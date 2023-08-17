@@ -17,7 +17,6 @@
 
 
 body {
-    
     font-family: 'Mulish', sans-serif;
     width: 43rem;
     margin: 0 auto;   
@@ -33,10 +32,12 @@ header {
     align-items: center;
 }
 
+
 .kat {
-    width: 100%;
+    width: 43rem;
     overflow: hidden; 
-}
+    flex-shrink: 0;
+} 
 
 .logo {
    background: white;
