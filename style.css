@@ -141,6 +141,11 @@ footer {
     flex-direction: row;
     gap: 3.4rem;
     padding: 3.9rem 15rem;
+    
+  }
+
+  aside {
+    margin-top: 0;
   }
 
   .subheader {
@@ -151,5 +156,6 @@ footer {
 
   .kat {
     border-radius: 5px;
+    
   }
 }
