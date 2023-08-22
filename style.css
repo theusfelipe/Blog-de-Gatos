@@ -103,6 +103,11 @@ aside {
 
 .subheader {
   margin-block: 3.2rem;
+
+}
+
+.button-box {
+    margin-top: .8rem;
 }
 
 .section h2 {
@@ -114,6 +119,7 @@ aside {
   display: flex;
   gap: 1.6rem;
   padding-bottom: 3.2rem;
+  margin-block: 2.2rem;
 }
 
 .section img {
