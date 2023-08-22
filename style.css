@@ -79,6 +79,7 @@ form input::placeholder {
 main {
   display: flex;
   flex-direction: column;
+  padding: 2.2rem;
 }
 
 aside {
@@ -103,7 +104,6 @@ aside {
 
 .subheader {
   margin-block: 3.2rem;
-
 }
 
 .button-box {
