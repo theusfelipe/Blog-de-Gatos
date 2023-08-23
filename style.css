@@ -55,6 +55,7 @@ h2 {
   padding: 0.9rem;
   border-radius: 50%;
   animation: SlideIn 400ms;
+  animation: LogoRotate 5s infinite;
 }
 
 input {
@@ -102,7 +103,7 @@ aside {
   width: 100%;
   max-width: 80rem;
   animation: appear 700ms backwards;
-  }
+}
 
 .artigo button {
   background: var(--bg-header);
@@ -117,8 +118,6 @@ aside {
 
 .subheader {
   margin-block: 3.2rem;
-  
-
 }
 
 .button-box {
@@ -179,9 +178,6 @@ footer {
   .kat {
     border-radius: 5px;
   }
-
-
-  
 }
 
 @keyframes appear {
@@ -206,18 +202,22 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
-  
 }
-
 
 @keyframes SlideIn {
   from {
-      opacity: 0;
-      transform: translateX(-38rem);
+    opacity: 0;
+    transform: translateX(-38rem);
   }
 
   to {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes LogoRotate {
+  from {
+    transform: rotateY(360deg);
   }
 }
