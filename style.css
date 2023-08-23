@@ -32,6 +32,7 @@ header {
   background: var(--bg-header);
   padding: 1.6rem 2.8rem;
   align-items: center;
+  animation: FadeInBottom 600ms;
 }
 
 h1,
@@ -53,6 +54,7 @@ h2 {
   background: white;
   padding: 0.9rem;
   border-radius: 50%;
+  animation: SlideIn 400ms;
 }
 
 input {
@@ -74,6 +76,7 @@ form input::placeholder {
   height: 4.2rem;
   object-fit: cover;
   border-radius: 50%;
+  animation: SlideIn 400ms;
 }
 
 main {
@@ -146,6 +149,7 @@ footer {
   text-align: center;
   padding: 1.6rem;
   color: white;
+  animation: SlideIn 400ms;
 }
 
 @media (min-width: 1568px) {
@@ -170,9 +174,6 @@ footer {
     border-radius: 5px;
   }
 
-  .artigo {
-    animation: appear 700ms backwards;
-  }
 
   
 }
@@ -186,5 +187,31 @@ footer {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes FadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
+
+@keyframes SlideIn {
+  from {
+      opacity: 0;
+      transform: translateX(-38rem);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateX(0);
   }
 }
