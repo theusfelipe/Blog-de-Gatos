@@ -47,7 +47,6 @@ h2 {
   width: 100%;
   overflow: hidden;
   flex-shrink: 0;
-  
 }
 
 .logo {
@@ -82,7 +81,6 @@ main {
   flex-direction: column;
 }
 
-
 aside {
   margin-top: 3.4rem;
 }
@@ -94,7 +92,8 @@ aside {
 .artigo {
   width: 100%;
   max-width: 80rem;
-}
+  animation: appear 700ms backwards;
+  }
 
 .artigo button {
   background: var(--bg-header);
@@ -103,23 +102,29 @@ aside {
   border: none;
 }
 
+.artigo2 {
+  animation: appear 700ms backwards;
+}
+
 .subheader {
   margin-block: 3.2rem;
+  
+
 }
 
 .button-box {
-    margin-top: .8rem;
+  margin-top: 0.8rem;
 }
 
-.button:hover{
+.button:hover {
   cursor: pointer;
   transition: 0.6s;
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 .section h2 {
   font-size: 1.8rem;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 .section {
@@ -128,20 +133,12 @@ aside {
   padding-bottom: 3.2rem;
   margin-block: 2.2rem;
   animation: appear 700ms backwards;
-
 }
 
 .section img {
   object-fit: cover;
   width: 15.1rem;
   height: 8.4rem;
-}
-
-.section:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  
-  transition: 0.5s;
 }
 
 footer {
@@ -157,7 +154,6 @@ footer {
     flex-direction: row;
     gap: 3.4rem;
     padding: 3.9rem 15rem;
-
   }
 
   aside {
@@ -178,25 +174,8 @@ footer {
     animation: appear 700ms backwards;
   }
 
-  .artigo2 {
-        animation: appear 700ms backwards;
-
-  }
-
-  .section {
-    animation: appear 700ms backwards;
-
-  }
-
-  .section:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: 0.5s;
-  }
-
-
+  
 }
-
 
 @keyframes appear {
   0% {
@@ -208,5 +187,4 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
-
 }
