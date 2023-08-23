@@ -79,6 +79,12 @@ form input::placeholder {
   animation: SlideIn 400ms;
 }
 
+.avatar:hover {
+  cursor: pointer;
+  transition: 0.6s;
+  transform: scale(1.2);
+}
+
 main {
   display: flex;
   flex-direction: column;
