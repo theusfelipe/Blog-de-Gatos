@@ -47,6 +47,7 @@ h2 {
   width: 100%;
   overflow: hidden;
   flex-shrink: 0;
+  
 }
 
 .logo {
@@ -79,8 +80,8 @@ form input::placeholder {
 main {
   display: flex;
   flex-direction: column;
-  
 }
+
 
 aside {
   margin-top: 3.4rem;
@@ -157,6 +158,19 @@ footer {
 
   .kat {
     border-radius: 5px;
-    
   }
+}
+
+
+@keyframes appearbeside {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 }
