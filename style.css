@@ -121,6 +121,8 @@ aside {
   gap: 1.6rem;
   padding-bottom: 3.2rem;
   margin-block: 2.2rem;
+  animation: appear 700ms backwards;
+
 }
 
 .section img {
@@ -129,6 +131,12 @@ aside {
   height: 8.4rem;
 }
 
+.section:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border-radius: 2rem;
+  transition: 0.5s;
+}
 
 footer {
   background: var(--bg-footer);
@@ -143,7 +151,7 @@ footer {
     flex-direction: row;
     gap: 3.4rem;
     padding: 3.9rem 15rem;
-    
+
   }
 
   aside {
@@ -159,13 +167,36 @@ footer {
   .kat {
     border-radius: 5px;
   }
+
+  .artigo {
+    animation: appear 700ms backwards;
+  }
+
+  .artigo2 {
+        animation: appear 700ms backwards;
+
+  }
+
+  .section {
+    animation: appear 700ms backwards;
+
+  }
+
+  .section:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    border-radius: 2rem;
+    transition: 0.5s;
+  }
+
+
 }
 
 
-@keyframes appearbeside {
+@keyframes appear {
   0% {
     opacity: 0;
-    transform: translateY(2rem);
+    transform: translateY(8rem);
   }
 
   100% {
