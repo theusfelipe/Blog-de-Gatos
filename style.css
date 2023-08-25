@@ -114,10 +114,19 @@ aside {
 
 .artigo2 {
   animation: appear 700ms backwards;
+  padding: 2.2rem 2rem;
 }
 
 .subheader {
   margin-block: 3.2rem;
+}
+
+.subheader {
+  padding: 2.2rem 2rem;
+}
+
+.artigo p {
+  padding: 2.2rem 2rem;
 }
 
 .button-box {
